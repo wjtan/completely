@@ -24,4 +24,9 @@ public class SampleAdapter implements IndexAdapter<SampleRecord>
     {
         return index.put(token, value);
     }
+    
+    @Override
+    public void clear(){
+      index.clear();
+    }
 }
